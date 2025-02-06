@@ -1,0 +1,52 @@
+:confExp-html-pdf:
+# No incluir tabla de contenidos ni postamble (en html), poer sí el preamble en html para que en éste se muestre título y autor (ver variables locales arriba). La inclusión del título no se debe manejar en options ya que se está configurando en las variables locales que se especifican al inicio de este archivo.
+#+options: toc:nil html-postamble:nil author:t html-preamble:t
+
+# ------
+# Latex
+# ------
+# Uso de formato javeriana
+#+latex_header: \usepackage{docsimplepuj}
+
+# Configuración de babel para títulos y etiquetas en español
+#+language: es
+#+latex_header: \usepackage[spanish]{babel}
+
+# Tablas con barras de color
+#+latex_header: \usepackage{xcolor}
+# Importar booktabs
+#+latex_header: \usepackage{booktabs}
+# Multirow para tablas 
+#+latex_header: \usepackage{multirow}
+# Para páginas en horizontal
+#+latex_header:\usepackage{pdflscape}
+
+# No resaltar enlaces en documento final, xcolor para tablas
+#+latex_class_options: [hidelinks, table]
+
+# -----
+# html
+# -----
+# Usar CSS externo
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.8.0/tufte.min.css">
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+# +HTML_HEAD: <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+# +HTML_HEAD_EXTRA: <style>body { font-family: 'Garamond', serif; }</style>  
+#+HTML_HEAD_EXTRA: <style>body {margin: 40px; /* Adjust the value as needed */}  .container {max-width: 80%; /* Change this to control text width */ margin: auto;  }</style>
+# ------------
+# Bibliografía
+# ------------
+# El procesador de bibliografía se estableció con una variable local al incio de este archivo. Es csl para html y biblatex para latex.
+
+# Configuración específica para latex
+#+latex_header: \usepackage[citestyle=authoryear,bibstyle=authoryear,backend=biber,maxbibnames=3,isbn=false,uniquename=minfull] {biblatex}
+
+# Definición de fuente de referencias
+#+bibliography: ~/biblioteca/main.bib
+
+:END:
