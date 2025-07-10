@@ -1,5 +1,4 @@
-# +setupfile: https://raw.githubusercontent.com/baracunatana/org-export-common/refs/heads/main/puj-re-reveal.org
-#+setupfile: /home/juan/org-roam/activos/org-export-common/puj-re-reveal.org
+#+setupfile: https://raw.githubusercontent.com/baracunatana/org-export-common/refs/heads/main/puj-re-reveal.org
 
 #+title: Adaptable a títulos largos o cortos 
 #+subtitle: Un subtítulo opcional 
