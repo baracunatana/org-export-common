@@ -19,9 +19,9 @@
 #+date: {{{contexto}}} @@html: <br>@@ {{{lugar}}} 26 de marzo 2025
 
 # reveal_talk_url se usa para el url de la imagen a mostrar en la parte derecha de la lámina de título
-#+reveal_talk_url: https://bienalsca.co/wp-content/uploads/2022/11/APR2085.jpg
+#+reveal_talk_url: https://github.com/baracunatana/org-export-common/blob/main/media/atrio.jpg?raw=true
 
-#+reveal_title_slide: <section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>%t</h1><p class="t-subtitle">%s</p></div><div class="autor-bloque"><div class="texto autor">%a</div><div class="texto cargo">%A</div><div class="texto afiliacion">%m</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://cdn-icons-png.flaticon.com/256/269/269084.png"> %e</div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/csedu2025/blob/d32cd3fce53fc49abf905776a36a7700940a1c0e/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">%d</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="%u"></div></section>
+#+reveal_title_slide: <section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>%t</h1><p class="t-subtitle">%s</p></div><div class="autor-bloque"><div class="texto autor">%a</div><div class="texto cargo">%A</div><div class="texto afiliacion">%m</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://github.com/baracunatana/org-export-common/blob/main/media/sobre.png?raw=true"> %e</div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/org-export-common/blob/main/media/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">%d</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="%u"></div></section>
 
 * Ejemplo 1
 ** Ejemplo 2

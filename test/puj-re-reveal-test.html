@@ -13,254 +13,32 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/baracunatana/re-reveal-estilos/j-oer-re-reveal.css"/>
 
-<style type="text/css">
-:root {
-    --blue: #2C5697;
-    --yellow: #F8CD00;
-    --black: #000000;
-    --gray: #f5f5f5;
-}
-
-
-.reveal h1, .reveal h2, .reveal h3 {
-    color: var(--blue);
-    font-weight: 600;
-}
-
-.present h2 {
-    margin-top: 0.5em;
-}
-
-.present h3 {
-    margin-top: 0.5em;
-}
-
-.reveal .slides section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-}
-
-.title-slide {
-    display: flex !important;
-    justify-content: flex-start;
-    gap: 0;
-    height: 100vh;
-    width: 100%;
-}
-
-.title-right {
-    width: 60%;
-    height: 100vh;
-    position: relative !important;
-    border-top: 5px solid var(--yellow);
-    border-right: 5px solid var(--yellow);
-    border-bottom: 5px solid var(--yellow);
-    overflow: hidden !important;  
-    j-background-image: url('https://bienalsca.co/wp-content/uploads/2022/11/APR2085.jpg');
-}
-
-.imagen-derecha {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: cover !important;
-    border: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    max-width: 100%; !important;
-    max-height: 100%; !important;
-}
-
-.reveal .title-right .imagen-derecha {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border: 0px;
-    margin: 0px;
-    display: block;
-}
-
-.title-left {
-    width: 40%;
-    height: 100vh;
-    padding-left: 40px;
-    padding-right: 40px;
-    background: linear-gradient(135deg, var(--blue) 0%, rgba(30, 63, 145, 1) 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-top: 5px solid var(--yellow);
-    border-left: 5px solid var(--yellow);
-    border-bottom: 5px solid var(--yellow);
-}
-
-.t-bloque-titulo {
-    position: relative;
-    padding-top: 5vh;
-    padding-bottom: 5px;
-    color: white;
-}
-
-.t-bloque-titulo::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0%; 
-    width: 20%;
-    height: 5px;
-    background-color: var(--yellow);
-}
-
-.title-left h1 {
-    color: white;
-    text-align: left;
-    line-height: 0.9;
-    font-size: clamp(1rem, 4rem, 5rem);
-    text-shadow: 3px 3px 4px rgba(0,0,0,0.3);
-}
-
-.autor-bloque {
-    margin-top: 40px;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;  /* center vertically */
-}
-
-.autor {
-    font-size: 2rem;
-    text-align: left;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-.cargo {
-    font-size: 1.1rem;
-    text-align: left;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.afiliacion {
-    font-size: 1rem;
-    text-align: left;
-    text-transform: capitalize;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.correo {
-    display: flex;
-    align-items: center;
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 10px;
-}
-
-.correo a {
-    color: rgba(255,255,255,0.8);
-}
-
-.t-cierre {
-    border-top: 1px solid rgba(255,255,255,0.3);
-    margin-top: auto;
-    padding-bottom: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.contexto {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.7);
-    width: 100%;
-    text-align: right;
-    margin-top: 10px;
-}
-
-.logo-contexto{
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.t-subtitle {
-    font-size: 2rem;
-    text-align: left;
-    text-transform: capitalize;
-    font-style: italic;
-    color: rgba(255,255,255,0.9);
-    font-weight: 100;
-    margin-top: 0; 
-    margin-bottom: 0;
-}
-
-.title-left {
-    width: 40%;
-    height: 100vh;
-    background-color: var(--blue);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border-top: 5px solid var(--yellow);
-    border-left: 5px solid var(--yellow);
-    border-bottom: 5px solid var(--yellow);
-}
-
-
-.t-email a{
-    color: white;
-    font-size: 1rem;
-    text-align: left;
-    text-transform: lowercase;
-    margin-top: 0;     /* Add this */
-    margin-bottom: 0;
-}
-
-.title-left img {
-    background-color: transparent;
-    max-width: 60px;   /* Won't exceed 400px */
-    width: auto;
-    height: auto;
-}
-
-</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/baracunatana/org-export-common@master/re-reveal-puj.css"/>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>Adaptable a títulos largos o cortos</h1><p class="t-subtitle">Un subtítulo opcional</p></div><div class="autor-bloque"><div class="texto autor">Juan E. Gómez-Morantes, PhD</div><div class="texto cargo">Profesor Asociado</div><div class="texto afiliacion">Pontificia Universidad Javierana</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://cdn-icons-png.flaticon.com/256/269/269084.png"> <a href="mailto:je.gomezm@javeriana.edu.co">je.gomezm@javeriana.edu.co</a></div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/csedu2025/blob/d32cd3fce53fc49abf905776a36a7700940a1c0e/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">Nombre del curso, evento, o conferencia.  <br> Bogotá, Colombia • 26 de marzo 2025</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="https://bienalsca.co/wp-content/uploads/2022/11/APR2085.jpg"></div></section>
+<section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>Adaptable a títulos largos o cortos</h1><p class="t-subtitle">Un subtítulo opcional</p></div><div class="autor-bloque"><div class="texto autor">Juan E. Gómez-Morantes, PhD</div><div class="texto cargo">Profesor Asociado</div><div class="texto afiliacion">Pontificia Universidad Javierana</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://github.com/baracunatana/org-export-common/blob/main/media/sobre.png?raw=true"> <a href="mailto:je.gomezm@javeriana.edu.co">je.gomezm@javeriana.edu.co</a></div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/org-export-common/blob/main/media/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">Nombre del curso, evento, o conferencia.  <br> Bogotá, Colombia • 26 de marzo 2025</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="https://github.com/baracunatana/org-export-common/blob/main/media/atrio.jpg?raw=true"></div></section>
 </section>
 <section>
-<section id="slide-orge13b81f">
-<h2 id="orge13b81f">Ejemplo 1</h2>
-<div class="outline-text-2" id="text-orge13b81f">
+<section id="slide-org290d4e6">
+<h2 id="org290d4e6">Ejemplo 1</h2>
+<div class="outline-text-2" id="text-org290d4e6">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgf93a7f8">
-<h3 id="orgf93a7f8">Ejemplo 2</h3>
+<section id="slide-org4cf2f95">
+<h3 id="org4cf2f95">Ejemplo 2</h3>
 <p>
 Test
 </p>
 </section>
 </section>
 <section>
-<section id="slide-orgd796c1d">
-<h2 id="orgd796c1d">Y la tres</h2>
+<section id="slide-org8b8486f">
+<h2 id="org8b8486f">Y la tres</h2>
 </section>
 </section>
 </div>
