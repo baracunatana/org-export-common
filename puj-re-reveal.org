@@ -4,9 +4,8 @@
 #+reveal_hlevel: 2
 #+language: es
 #+reveal_theme: white 
-#+options: toc:nil num:nil reveal_width:1600 reveal_height:900 reveal_margin:0.1 reveal_minScale:0.2 reveal_maxScale:2.5 reveal_transition:'cube' reveal_history:t date:nil reveal_embed_local_resources:t
+#+reveal_margin: 0.0
+#+options: toc:nil num:nil reveal_width:"100%" reveal_height:"100%" reveal_margin:"0.0" reveal_minScale:0.2 reveal_maxScale:2.5 reveal_transition:'cube' reveal_history:t date:nil reveal_embed_local_resources:t
 #+reveal_extra_css: https://cdn.jsdelivr.net/gh/baracunatana/re-reveal-estilos/j-oer-re-reveal.css
 
 #+reveal_extra_css: https://cdn.jsdelivr.net/gh/baracunatana/org-export-common@master/re-reveal-puj.css
-
-#+REVEAL_TITLE_SLIDE: <section class="title-slide">                <div class="title-left"><img src="https://github.com/baracunatana/csedu2025/blob/d32cd3fce53fc49abf905776a36a7700940a1c0e/logo_puj.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="title-right"><h1>%t</h1><h2>%a</h2><p>%d</p></div></section>

@@ -1,0 +1,30 @@
+# +setupfile: https://raw.githubusercontent.com/baracunatana/org-export-common/refs/heads/main/puj-re-reveal.org
+#+setupfile: /home/juan/org-roam/activos/org-export-common/puj-re-reveal.org
+
+#+title: Adaptable a títulos largos o cortos 
+#+subtitle: Un subtítulo opcional 
+
+# A continuación se configura el bloque de información de autor para casos individuales (un autor). Si se quiere un bloque de autor más complejo que esto, se debe redefinir el keyword reveal_title_slide
+#+author: Juan E. Gómez-Morantes, PhD
+# reveal_academic_title se usa para el cargo o, en general, la linea bajo el autor. Se puede dejar vacía. 
+#+reveal_academic_title: Profesor Asociado
+# +reveal_miscinfo se usa para la tercera línea luego del nombre del autor. Tiene una fuente un poco más pequeña que reveal_academic_title
+#+reveal_miscinfo: Pontificia Universidad Javierana
+# Para cambiar el "Facultad de Ingeniería", es necesario modificar reveal_title_slide más abajo en esta plantilla
+#+email: je.gomezm@javeriana.edu.co
+
+# Se pueden dejar vacíos, pero no se puede eliminar
+#+macro: lugar Bogotá, Colombia • 
+#+macro: contexto  Nombre del curso, evento, o conferencia.
+#+date: {{{contexto}}} @@html: <br>@@ {{{lugar}}} 26 de marzo 2025
+
+# reveal_talk_url se usa para el url de la imagen a mostrar en la parte derecha de la lámina de título
+#+reveal_talk_url: https://bienalsca.co/wp-content/uploads/2022/11/APR2085.jpg
+
+#+reveal_title_slide: <section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>%t</h1><p class="t-subtitle">%s</p></div><div class="autor-bloque"><div class="texto autor">%a</div><div class="texto cargo">%A</div><div class="texto afiliacion">%m</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://cdn-icons-png.flaticon.com/256/269/269084.png"> %e</div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/csedu2025/blob/d32cd3fce53fc49abf905776a36a7700940a1c0e/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">%d</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="%u"></div></section>
+
+* Ejemplo 1
+** Ejemplo 2
+Test
+
+* Y la tres

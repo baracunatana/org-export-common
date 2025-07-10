@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="author" content="juan"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/baracunatana/re-reveal-estilos/j-oer-re-reveal.css"/>
+
+<style type="text/css">
+:root {
+    --blue: #2C5697;
+    --yellow: #F8CD00;
+    --black: #000000;
+    --gray: #f5f5f5;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.reveal .slides section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.title-slide {
+    display: flex !important;
+    justify-content: flex-start;
+    gap: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-right {
+    width: 60%;
+    height: 100vh;
+    background-image: url('https://images.adsttc.com/media/images/57ad/4760/e58e/cef5/d400/03a2/slideshow/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 5px solid var(--yellow);
+    border-right: 5px solid var(--yellow);
+    border-bottom: 5px solid var(--yellow);
+}
+
+.title-left {
+    width: 40%;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--blue) 0%, rgba(30, 63, 145, 1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);
+    border-bottom: 5px solid var(--yellow);
+}
+
+.t-bloque-titulo {
+    position: relative;
+    margin-left: 40px;
+    padding-top: 15vh;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.t-bloque-titulo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%; 
+    width: 20%;
+    height: 5px;
+    background-color: var(--yellow);
+}
+
+.t-cierre {
+    margin-top: auto;
+    border-top: 5px solid var(--yellow);
+    padding-bottom: 30px;
+    margin-left: 40px;
+}
+
+.t-cierre p {
+    color: white;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title-left h1 {
+    color: white;
+    text-align: left;
+    line-height: 0.8;
+    font-size: clamp(1rem, 4rem, 5rem);
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+
+.t-subtitle {
+    font-size: 2rem;
+    text-align: left;
+    text-transform: capitalize;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    font-weight: 100;
+    margin-top: 0;     /* Add this */
+    margin-bottom: 0;
+}
+
+.title-left {
+    width: 40%;
+    height: 100vh;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);
+    border-bottom: 5px solid var(--yellow);
+}
+
+
+.t-email a{
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    text-transform: lowercase;
+    margin-top: 0;     /* Add this */
+    margin-bottom: 0;
+}
+
+.title-left img {
+    background-color: transparent;
+    max-width: 60px;   /* Won't exceed 400px */
+    width: auto;
+    height: auto;
+}
+
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1></h1><p class="t-subtitle"></p></div><div style="padding-top: 50px;"><h2>juan</h2><h2 class="t-email">📨 <a href="mailto:juan@shion">juan@shion</a></h2></div><div class="t-cierre"><p></p><p></p></div> </div> <div class="title-right"> </div></section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.00,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Adaptable a títulos largos o cortos</title>
+<meta name="author" content="Juan E. Gómez-Morantes, PhD"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/baracunatana/re-reveal-estilos/j-oer-re-reveal.css"/>
+
+<style type="text/css">
 :root {
     --blue: #2C5697;
     --yellow: #F8CD00;
@@ -5,21 +21,16 @@
     --gray: #f5f5f5;
 }
 
-.texto {
-    color: white;
-    margin-top: 0;    
-    margin-bottom: 0;
-}
 
 .reveal h1, .reveal h2, .reveal h3 {
     color: var(--blue);
     font-weight: 600;
 }
 
-/* Agrega algo de espacio sobre los títulos de las láminas regulares */
 .present h2 {
     margin-top: 0.5em;
 }
+
 .present h3 {
     margin-top: 0.5em;
 }
@@ -223,3 +234,74 @@
     width: auto;
     height: auto;
 }
+
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<section class="title-slide"> <div class="title-left"><div class="t-bloque-titulo"> <h1>Adaptable a títulos largos o cortos</h1><p class="t-subtitle">Un subtítulo opcional</p></div><div class="autor-bloque"><div class="texto autor">Juan E. Gómez-Morantes, PhD</div><div class="texto cargo">Profesor Asociado</div><div class="texto afiliacion">Pontificia Universidad Javierana</div><div class="texto afiliacion">Facultad de Ingeniería</div><div class="correo"><img style="height: 1rem; margin-right: 5px;"  src="https://cdn-icons-png.flaticon.com/256/269/269084.png"> <a href="mailto:je.gomezm@javeriana.edu.co">je.gomezm@javeriana.edu.co</a></div></div><div class="t-cierre"><div class="logo-contexto"><img src="https://github.com/baracunatana/csedu2025/blob/d32cd3fce53fc49abf905776a36a7700940a1c0e/logo-puj-blanco.png?raw=true" alt="Pontificia Universidad Javeriana"></div><div class="contexto">Nombre del curso, evento, o conferencia.  <br> Bogotá, Colombia • 26 de marzo 2025</div></div> </div> <div class="title-right"><img class="imagen-derecha" src="https://bienalsca.co/wp-content/uploads/2022/11/APR2085.jpg"></div></section>
+</section>
+<section>
+<section id="slide-orge13b81f">
+<h2 id="orge13b81f">Ejemplo 1</h2>
+<div class="outline-text-2" id="text-orge13b81f">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf93a7f8">
+<h3 id="orgf93a7f8">Ejemplo 2</h3>
+<p>
+Test
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgd796c1d">
+<h2 id="orgd796c1d">Y la tres</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hakimel/reveal.js@5.2.1/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.00,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
